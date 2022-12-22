@@ -4,18 +4,18 @@ import {useState} from 'react';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const CreateQuestionAnswer=()=>{
-    const[Question,setQuestion] = useState("");
-    const[Answer,setAnswer] = useState("");
+const CreateSuggestion=()=>{
+    const[Title,setTitle] = useState("");
+    const[Details,setDetails] = useState("");
     const navigate = useNavigate();
 
     const handleForm = (event) =>{
         event.preventDefault();
-        setQuestion('');
-        setAnswer('');
-        var data = {Question:Question, Answer:Answer};
-        axios.post("https://localhost:44355/api/qa/add", data).then((rsp)=>{
-            navigate('/Admin/QuestionAnswer');
+        setTitle('');
+        setDetails('');
+        var data = {Title:Title, Details:Details};
+        axios.post("https://localhost:44355/api/suggestion/add", data).then((rsp)=>{
+            navigate('/Admin/Suggestions');
         });
     }
     return(
@@ -25,15 +25,15 @@ const CreateQuestionAnswer=()=>{
                 <div class="containerf">
                     <div class="contentf">
                         <div class="contentf-3">
-                            <h1>Add A New Q&A</h1>
+                            <h1>Add A New Suggestions</h1>
                                  
                             <form action="" method="POST" onSubmit={handleForm}>
                               
-                              <label>Question</label><br/>
-                              <input type="text" name="Question" id="Question" value={Question} onChange={(e)=>{setQuestion(e.target.value)}} /><br/>
+                              <label>Title</label><br/>
+                              <input type="text" name="Title" id="Title" value={Title} onChange={(e)=>{setTitle(e.target.value)}} /><br/>
                               
-                              <label>Answer</label><br/>
-                              <input type="text" name="Answer" id="Answer" value={Answer} onChange={(e)=>{setAnswer(e.target.value)}} /><br/>
+                              <label>Details</label><br/>
+                              <input type="text" name="Details" id="Details" value={Details} onChange={(e)=>{setDetails(e.target.value)}} /><br/>
                               
                               
                               <button>ADD</button>
@@ -47,4 +47,4 @@ const CreateQuestionAnswer=()=>{
         </div>
     )
 }
-export default CreateQuestionAnswer;
+export default CreateSuggestion;

@@ -16,8 +16,8 @@ const LeftBar=()=>{
                         <li><a href={"/Admin/Officer"}><span>Officer</span></a></li>
                         <li><a href={"/Admin/Fisherman"}><span>Fisherman</span></a></li>
                         <li><a href={"/Admin/QuestionAnswer"}><span>Question And Answers</span></a></li>
-                        <li><a href="#"><span>Suggestions</span></a></li>
-                        <li><a href="#"><span>Products</span></a></li>
+                        <li><a href={"/Admin/Suggestions"}><span>Suggestions</span></a></li>
+                        <li><a href={"/Admin/Product"}><span>Products</span></a></li>
                         <li><a href="#"><span>Account</span></a></li>
                         <li><a href="#"><span>Logout</span></a></li>
                     </ul>

@@ -1,0 +1,118 @@
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .container-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .container-footer .sec {
+    margin-right: 30px;
+}
+footer .container-footer .sec.about-us {
+    width: 40%;
+}
+footer .container-footer h2 {
+    position: relative;
+    color: rgb(12, 212, 238);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .container-footer h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    background: #f00;
+}
+footer p {
+    color: aquamarine;
+}
+.icons-footer ul {
+    margin-top: 20px;
+    display: flex;
+}
+.icons-footer li {
+    list-style: none;
+}
+.icons-footer li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.icons-footer li a:hover {
+    background: rgb(10, 233, 110);
+}
+.icons-footer li a .fab {
+    color: #fff;
+    font-size: 20px;
+}
+.quick-links {
+    position: relative;
+    width: 200px;
+}
+.quick-links ul li {
+    list-style: none;
+}
+.quick-links ul li a {
+    color: aquamarine;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quick-links ul li a:hover {
+    color: #f00;
+}
+.footer-contract {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.footer-contract .info {
+    position: relative;
+}
+.footer-contract .info li {
+    margin-bottom: 16px;
+}
+.footer-contract .info li span:nth-child(1) {
+    color: aquamarine;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.footer-contract .info li span {
+    color: aquamarine;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.footer-contract .info li a {
+    color: aqua;
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.footer-contract .info li a:hover {
+    color: aquamarine;
+}
+.footer-txt {
+    width: 100%;
+    background: #181818;
+    padding: 8px 100px;
+    text-align: center;
+    color: aquamarine;
+}

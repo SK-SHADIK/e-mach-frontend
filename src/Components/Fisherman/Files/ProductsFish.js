@@ -1,11 +1,9 @@
-import Bars from "../Bars/Bars";
-import "../CSS/AdminStyle2.css";
+import "../../Admin/CSS/AdminStyle2.css";
 import {useState, useEffect} from 'react';
 import axios from "axios";
-import { CSVLink } from "react-csv";
+import Topbar from "../Bars/Topbar";
 
-
-const Product=()=>{
+const ProductFish=()=>{
     const [product,setProduct] = useState([]);
 
     useEffect(()=>{
@@ -28,13 +26,9 @@ const Product=()=>{
     }
     return(
         <div>
-            <Bars />
+            <Topbar />
             <section id="main-content">
                 <div class="main-content-info container">
-                    <div class="card">
-                        <h2 class="cus-num cus-pro">{product.length}</h2>
-                        <p>Total Product</p>
-                    </div>
 
 
                     <div class="content-pro-par container">
@@ -44,8 +38,7 @@ const Product=()=>{
                                     <h2>Product List</h2>
                                 </div>
                                 <div class="see-all">
-                                   <div class="btn2"><CSVLink data={product} filename="Product Details">Export Product Details</CSVLink></div>
-                                    <button><a href={"/Admin/CreateProduct"}>ADD</a></button>
+                                    <button><a href={"/Fisherman/CreateProductFish"}>ADD</a></button>
                                 </div>
 
                             </div>
@@ -66,7 +59,7 @@ const Product=()=>{
                                             <td>{pro.Desc}</td>
                                             <td>{pro.Price}</td>
                                             <td>{pro.Qty}</td>
-                                            <td><div class="btn"><a href={`/Admin/UpdateProduct/${pro.Id}`}>Edit</a></div></td>
+                                            <td><div class="btn"><a href={`/Fisherman/UpdateProductFish/${pro.Id}`}>Edit</a></div></td>
                                             <td><button class="btn" onClick={ (e) => deleteOfficer(e, pro.Id) }>Delete</button></td>
                                         </tr>
                                     ))
@@ -81,4 +74,4 @@ const Product=()=>{
         </div>
     )
 }
-export default Product;
+export default ProductFish;

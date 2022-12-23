@@ -2,6 +2,7 @@ import Bars from "../Bars/Bars";
 import "../CSS/AdminStyle2.css";
 import {useState, useEffect} from 'react';
 import axios from "axios";
+import { CSVLink } from "react-csv";
 
 const Fisherman=()=>{
     const [fisherman,setFisherman] = useState([]);
@@ -42,6 +43,7 @@ const Fisherman=()=>{
                                 <h2>Fisherman List</h2>
                             </div>
                             <div class="see-all">
+                                <div class="btn2"><CSVLink data={fisherman} filename="Fisherman List">Export Fisherman List</CSVLink></div>
                                 <button><a href={"/Admin/CreateFisherman"}>ADD</a></button>
                             </div>
 

@@ -1,11 +1,9 @@
-import Bars from "../Bars/Bars";
-import "../CSS/AdminStyle2.css";
+import "../../Admin/CSS/AdminStyle2.css";
 import {useState, useEffect} from 'react';
 import axios from "axios";
-import { CSVLink } from "react-csv";
+import Topbar from "../Bars/Topbar";
 
-
-const Suggestions=()=>{
+const SuggestionsFish=()=>{
     const [sugg,setSugg] = useState([]);
 
     useEffect(()=>{
@@ -17,53 +15,30 @@ const Suggestions=()=>{
 
         }) 
     },[]);
-    const deleteSugg = (e, Id)=>{
-        e.preventDefault();
-        const thisClicked = e.currentTarget;
-        thisClicked.innerText = "Deleting";
-
-        axios.get(`https://localhost:44355/api/suggestion/delete/${Id}`).then((rsp)=>{
-            thisClicked.closest("tr").remove();
-        });
-    }
     return(
         <div>
-            <Bars />
+            <Topbar />
             <section id="main-content">
                 <div class="main-content-info container">
-                    <div class="card">
-                        <h2 class="cus-num cus-pro">{sugg.length}</h2>
-                        <p>Total Suggestions</p>
-                    </div>
 
 
                     <div class="content-pro-par container">
                         <div class="pro-table">
                             <div class="recent-project">
                                 <div class="rec-pro-h">
-                                    <h2>Suggestions List</h2>
+                                    <h2>Suggestions</h2>
                                 </div>
-                                <div class="see-all">
-                                   <div class="btn2"><CSVLink data={sugg} filename="Suggestions">Export Suggestions</CSVLink></div>
-                                    <button><a href={"/Admin/CreateSuggestion"}>ADD</a></button>
-                                </div>
-
                             </div>
                             <table>
                                 <tr>
-                                    <th>Id</th>
                                     <th>Title</th>
                                     <th>Details</th>
-                                    <th colspan="2">Options</th>
                                 </tr>
                                 {
                                      sugg.map((sug)=>(
                                         <tr>
-                                            <td>{sug.Id}</td>
                                             <td>{sug.Title}</td>
                                             <td>{sug.Details}</td>
-                                            <td><div class="btn"><a href={`/Admin/UpdateSuggestion/${sug.Id}`}>Edit</a></div></td>
-                                            <td><button class="btn" onClick={ (e) => deleteSugg(e, sug.Id) }>Delete</button></td>
                                         </tr>
                                     ))
                                 }
@@ -77,4 +52,4 @@ const Suggestions=()=>{
         </div>
     )
 }
-export default Suggestions;
+export default SuggestionsFish;

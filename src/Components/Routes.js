@@ -15,9 +15,16 @@ import UpdateOfficer from './Admin/Files/Update/UpdateOfficer';
 import UpdateProduct from './Admin/Files/Update/UpdateProduct';
 import UpdateQuestionAnswer from './Admin/Files/Update/UpdateQuestionAnswer';
 import UpdateSuggestion from './Admin/Files/Update/UpdateSuggestion';
+import CreateProductFish from './Fisherman/Files/Create/CreateProductFish';
+import CreateQuestions from './Fisherman/Files/Create/CreateQuestions';
+import ProductFish from './Fisherman/Files/ProductsFish';
+import QuestionAndAnswerFish from './Fisherman/Files/QuestionAndAnswerFish';
+import SuggestionsFish from './Fisherman/Files/SuggestionsFish';
+import UpdateProductFish from './Fisherman/Files/Update/UpdateProductFish';
 import FishermanDashboard from './Fisherman/FishermanDashboard';
 import Login from './Login';
 import OfficerDashboard from './Officer/OfficerDashboard';
+import Regestration from './Regestration';
 
 
 const RouteLink = () => {
@@ -30,6 +37,7 @@ const RouteLink = () => {
 
                     
                     <Route path="/Login" element={<Login />}></Route>
+                    <Route path="/Regestration" element={<Regestration />}></Route>
 
                     {/*----------------------------------- ADMIN'S ROUTES ------------------------------------*/}
                     <Route path="/AdminDashboard" element={<AdminDashboard />}></Route>
@@ -53,6 +61,12 @@ const RouteLink = () => {
                     
                     {/*----------------------------------- FishermanDashboard'S ROUTES ------------------------------------*/}
                     <Route path="/FishermanDashboard" element={<FishermanDashboard />}></Route>
+                    <Route path="/Fisherman/ProductFish" element={<ProductFish />}></Route>
+                    <Route path="/Fisherman/CreateProductFish" element={<CreateProductFish />}></Route>
+                    <Route path="/Fisherman/UpdateProductFish/:Id" element={<UpdateProductFish />}></Route>
+                    <Route path="/Fisherman/QuestionAndAnswerFish" element={<QuestionAndAnswerFish />}></Route>
+                    <Route path="/Fisherman/SuggestionsFish" element={<SuggestionsFish />}></Route>
+                    <Route path="/Fisherman/CreateQuestions" element={<CreateQuestions />}></Route>
 
 
                                         

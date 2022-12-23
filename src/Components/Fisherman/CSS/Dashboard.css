@@ -1,0 +1,104 @@
+.wrapperFish{
+	margin-bottom: 50px;
+}
+.navbarFish{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: skyblue;
+}
+.navbarFish .logoF{
+	font-size: 30px;
+	width: 140px;
+	height: auto;
+}
+.navbarFish ul{
+	margin-right: 20px;
+}
+.navbarFish ul .li-Fi{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbarFish ul .li-Fi .a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+.navbarFish ul .li-Fi .a:hover{
+	background: salmon;
+	border-radius: 2px;
+}
+/*Card */
+.cardsFish{
+	margin-top: 10%;
+	text-align: center;
+	padding: 30px;
+  }
+  .cardsFish h2.headerFish{
+	font-size: 40px;
+	margin: 0 0 30px 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+  }
+  .servicesFish{
+	display: flex;
+	align-items: center;
+  }
+  .contentFish{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between; 
+	margin: 20px;
+	padding: 20px;
+	border: 2px solid black;
+	border-radius: 4px;
+	transition: all .3s ease;
+  }
+  .contentFish > *{
+	flex: 1 1 100%;
+  }
+  .contentFish:hover{
+	color: white;
+  }
+  .contentFish:hover a{
+	border-color: white;
+	background: white;
+  }
+  .contentFish-1:hover{
+	border-color: #1DA1F2;
+	background: #1DA1F2;
+  }
+  .contentFish-1:hover a{
+	color: #1DA1F2;
+  }
+  .contentFish h2{
+	font-size: 30px;
+	margin: 16px 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+  }
+  .contentFish p{
+	font-size: 17px;
+	font-family: 'Poppins',sans-serif;
+  }
+  .contentFish a{
+	margin: 22px 0;
+	background: black;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 1px solid black;
+	padding: 15px 0;
+	border-radius: 25px;
+	transition: .3s ease;
+  }
+  .contentFish a:hover{
+	border-radius: 4px;
+  }

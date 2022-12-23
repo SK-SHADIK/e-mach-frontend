@@ -11,8 +11,8 @@ const LeftBar=()=>{
                     <ul>
                         <li><a href={"/AdminDashboard"}><span>Dashboard</span></a></li>
                         <li><a href="#"><span>Statement</span></a></li>
-                        <li><a href="#"><span>Orders</span></a></li>
-                        <li><a href="#"><span>Income</span></a></li>
+                        <li><a href="#"><span>Orders</span></a></li> 
+                        <li><a href="#"><span>Leave Status</span></a></li> 
                         <li><a href={"/Admin/Officer"}><span>Officer</span></a></li>
                         <li><a href={"/Admin/Fisherman"}><span>Fisherman</span></a></li>
                         <li><a href={"/Admin/QuestionAnswer"}><span>Question And Answers</span></a></li>

@@ -320,3 +320,8 @@ button:hover {
     color: #000;
     font-size: 20px;
 }
+.see-all .btn2 {
+    width: 200px;
+    height: 30px;
+    margin-right: 20px;
+}

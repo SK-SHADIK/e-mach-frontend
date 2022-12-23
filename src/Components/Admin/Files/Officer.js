@@ -2,6 +2,8 @@ import Bars from "../Bars/Bars";
 import "../CSS/AdminStyle2.css";
 import {useState, useEffect} from 'react';
 import axios from "axios";
+import { CSVLink } from "react-csv";
+
 
 const Officer=()=>{
     const [officer,setOfficer] = useState([]);
@@ -42,6 +44,7 @@ const Officer=()=>{
                                     <h2>Officer List</h2>
                                 </div>
                                 <div class="see-all">
+                                   <div class="btn2"><CSVLink data={officer} filename="Officer List">Export Officer List</CSVLink></div>
                                     <button><a href={"/Admin/CreateOfficer"}>ADD</a></button>
                                 </div>
 

@@ -15,6 +15,9 @@ import UpdateOfficer from './Admin/Files/Update/UpdateOfficer';
 import UpdateProduct from './Admin/Files/Update/UpdateProduct';
 import UpdateQuestionAnswer from './Admin/Files/Update/UpdateQuestionAnswer';
 import UpdateSuggestion from './Admin/Files/Update/UpdateSuggestion';
+import FishermanDashboard from './Fisherman/FishermanDashboard';
+import Login from './Login';
+import OfficerDashboard from './Officer/OfficerDashboard';
 
 
 const RouteLink = () => {
@@ -23,7 +26,10 @@ const RouteLink = () => {
             <BrowserRouter>
 
                 <Routes>
-                    <Route path="/" element={<AdminDashboard />}></Route>
+                    <Route path="/" element={<Login />}></Route>
+
+                    
+                    <Route path="/Login" element={<Login />}></Route>
 
                     {/*----------------------------------- ADMIN'S ROUTES ------------------------------------*/}
                     <Route path="/AdminDashboard" element={<AdminDashboard />}></Route>
@@ -42,6 +48,16 @@ const RouteLink = () => {
                     <Route path="/Admin/Suggestions" element={<Suggestions />}></Route>
                     <Route path="/Admin/CreateSuggestion" element={<CreateSuggestion />}></Route>
                     <Route path="/Admin/UpdateSuggestion/:Id" element={<UpdateSuggestion />}></Route>
+
+
+                    
+                    {/*----------------------------------- FishermanDashboard'S ROUTES ------------------------------------*/}
+                    <Route path="/FishermanDashboard" element={<FishermanDashboard />}></Route>
+
+
+                                        
+                    {/*----------------------------------- OfficerDashboard'S ROUTES ------------------------------------*/}
+                    <Route path="/OfficerDashboard" element={<OfficerDashboard />}></Route>
 
                     
 

@@ -4,7 +4,7 @@ const Topbar=()=>{
     return(
         <div>
              <div class="wrapperFish">
-			<nav class="navbarFish">
+			 <nav class="navbarFish">
 				
 				<ul>
                     <li class="li-Fi"><h3 class="logoF">E-MACH</h3></li>
@@ -16,7 +16,12 @@ const Topbar=()=>{
 					<li class="li-Fi"><a class="a" href={"/Fisherman/SuggestionsFish"}>Suggestions</a></li>
 					<li class="li-Fi"><a class="a" href={"/Fisherman/CreateQuestions"}>Have Questions</a></li>
 					<li class="li-Fi"><a class="a" href={"/Fisherman/AddToCart"}>Cart</a></li>
-					<li class="li-Fi"><a class="a" href="#">Log Out</a></li>
+					<li class="li-Fi"><a class="a" href="#">Update Profile</a></li>
+					<li class="li-Fi"><a class="a" href={"/Login"}>Log Out</a></li>
+
+					<h3>Profile <br />{localStorage.getItem("User_Name")}</h3>
+
+					
 				</ul>
 			</nav>
             </div>

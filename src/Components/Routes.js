@@ -7,6 +7,7 @@ import CreateQuestionAnswer from './Admin/Files/Create/CreateQuestionAnswer';
 import CreateSuggestion from './Admin/Files/Create/CreateSuggestion';
 import Fisherman from './Admin/Files/Fisherman';
 import Officer from './Admin/Files/Officer';
+import Orders from './Admin/Files/Orders';
 import Product from './Admin/Files/Products';
 import QuestionAnswer from './Admin/Files/QuestionAnswer';
 import Suggestions from './Admin/Files/Suggestions';
@@ -57,6 +58,8 @@ const RouteLink = () => {
                     <Route path="/Admin/Suggestions" element={<Suggestions />}></Route>
                     <Route path="/Admin/CreateSuggestion" element={<CreateSuggestion />}></Route>
                     <Route path="/Admin/UpdateSuggestion/:Id" element={<UpdateSuggestion />}></Route>
+                    <Route path="/Admin/Orders" element={<Orders />}></Route>
+
 
 
                     

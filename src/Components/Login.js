@@ -20,11 +20,14 @@ const Login = () => {
             localStorage.setItem('_authToken', rsp.data.token);
             localStorage.setItem('User_Name', rsp.data.Username)
 
-            if (rsp.data.UserType === "Fisherman") {
-
-            navigate('/FishermanDashboard');
-            } else if (rsp.data.user === "Officer") {
+            if (rsp.data.UserType === "Admin") {
+               navigate('/AdminDashboard');
+            } 
+            else if (rsp.data.UserType === "Officer") {
                navigate('/OfficerDashboard');
+            }
+            else if (rsp.data.UserType === "Fisherman") {
+               navigate('/FishermanDashboard');
             }
          });
 

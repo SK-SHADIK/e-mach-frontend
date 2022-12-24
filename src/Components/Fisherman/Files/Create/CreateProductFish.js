@@ -47,8 +47,8 @@ const CreateProductFish=()=>{
                               <label>Quantity</label><br/>
                               <input type="text" name="Qty" id="Qty"value={Qty} onChange={(e)=>{setQty(e.target.value)}} /><br/>
         
-                              <label>User ID</label><br/>
-                              <input type="text" name="UserId" id="UserId"value={UserId} onChange={(e)=>{setUserId(e.target.value)}} /><br/>
+                              {/* <label>User ID</label><br/> */}
+                              <input type="hidden" name="UserId" id="UserId"value={UserId} onChange={(e)=>{setUserId(e.target.value)}} /><br/>
                                   
                               {/* <label>IMAGE</label><br/>
                               <input type="file" name="p_img" id="p_img" /><br/> */}

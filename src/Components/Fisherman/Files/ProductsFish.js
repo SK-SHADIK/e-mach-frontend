@@ -53,6 +53,7 @@ const ProductFish=()=>{
                                 </tr>
                                 {
                                      product.map((pro)=>(
+                                        // pro.UName===localStorage.getItem("User_Name")&&
                                         <tr>
                                             <td>{pro.PName}</td>
                                             <td>{pro.Id}</td>

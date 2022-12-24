@@ -18,8 +18,8 @@ const TopBar=()=>{
                    </div>
                    <div class="header-left header-profile">
                        <img src="" class="img-responsive" />
-                       <h3>Profile</h3>
-                       <p>Admin</p>
+                       <h3>Admin</h3>
+                       <p>{localStorage.getItem("User_Name")}</p>
                    </div>
                    <div class="clear"></div>
                </header>

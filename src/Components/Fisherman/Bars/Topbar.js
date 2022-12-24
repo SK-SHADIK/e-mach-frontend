@@ -15,6 +15,7 @@ const Topbar=()=>{
 					<li class="li-Fi"><a class="a" href={"/Fisherman/QuestionAndAnswerFish"}>Question And Answer</a></li>
 					<li class="li-Fi"><a class="a" href={"/Fisherman/SuggestionsFish"}>Suggestions</a></li>
 					<li class="li-Fi"><a class="a" href={"/Fisherman/CreateQuestions"}>Have Questions</a></li>
+					<li class="li-Fi"><a class="a" href={"/Fisherman/AddToCart"}>Cart</a></li>
 					<li class="li-Fi"><a class="a" href="#">Log Out</a></li>
 				</ul>
 			</nav>

@@ -1,25 +1,24 @@
 import Bars from "./Bars/Bars";
 import "./CSS/AdminStyle.css";
 import "./CSS/AdminStyle2.css";
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import axios from "axios";
 
 
-const AdminDashboard=()=>{
-    const [officer,setOfficer] = useState([]);
-    const [fisherman,setFisherman] = useState([]);
+const AdminDashboard = () => {
+    const [officer, setOfficer] = useState([]);
+    const [fisherman, setFisherman] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         axios.get("https://localhost:44355/api/adminDashboard")
-        .then((rsp)=>{
-            setFisherman(rsp.data[0]);
-            setOfficer(rsp.data[1]);
-            console.log(rsp);
-        },(err)=>{
+            .then((rsp) => {
+                setFisherman(rsp.data[0].fishermans);
+                setOfficer(rsp.data[0].officers);
+            }, (err) => {
 
-        }) 
-    },[]);
-    return(
+            })
+    }, []);
+    return (
         <div>
             <Bars />
             <section id="main-content">

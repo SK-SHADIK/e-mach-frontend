@@ -25,7 +25,8 @@
     margin-top: 20px;
     position: relative;
 }
-.wrapperf .Form .fieldf input{
+.wrapperf .Form .fieldf input,
+.wrapperf .Form .fieldf select{
     height: 100%;
     width: 100%;
     outline: none;
@@ -36,7 +37,9 @@
     transition: all 0.3s ease;
 }
 .wrapperf .Form .fieldf input:focus,
-.Form .fieldf input:valid{
+.wrapperf .Form .fieldf select:focus,
+.Form .fieldf input:valid,
+.Form .fieldf select:valid{
     border-color: lightsalmon;
 }
 .wrapperf .Form .fieldf label{

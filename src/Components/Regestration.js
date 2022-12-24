@@ -32,6 +32,14 @@ const Regestration=()=>{
                       <input type="password" placeholder="Enter Your Password Again"/>
                       <label>Confirm Password</label>
                    </div>
+                   <label>Regestration As:</label>
+                   <div class="fieldf">
+                      <select>
+                      <option value="Fisherman">Fisherman</option>
+                      <option value="Officer">Officer</option>
+                      </select>
+                      
+                   </div>
                    <div class="fieldf">
                       <input type="submit" value="Regestration" />
                    </div>

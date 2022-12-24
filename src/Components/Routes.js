@@ -15,6 +15,7 @@ import UpdateOfficer from './Admin/Files/Update/UpdateOfficer';
 import UpdateProduct from './Admin/Files/Update/UpdateProduct';
 import UpdateQuestionAnswer from './Admin/Files/Update/UpdateQuestionAnswer';
 import UpdateSuggestion from './Admin/Files/Update/UpdateSuggestion';
+import AddToCart from './Fisherman/Files/AddToCart';
 import CreateProductFish from './Fisherman/Files/Create/CreateProductFish';
 import CreateQuestions from './Fisherman/Files/Create/CreateQuestions';
 import ProductFish from './Fisherman/Files/ProductsFish';
@@ -67,6 +68,7 @@ const RouteLink = () => {
                     <Route path="/Fisherman/QuestionAndAnswerFish" element={<QuestionAndAnswerFish />}></Route>
                     <Route path="/Fisherman/SuggestionsFish" element={<SuggestionsFish />}></Route>
                     <Route path="/Fisherman/CreateQuestions" element={<CreateQuestions />}></Route>
+                    <Route path="/Fisherman/AddToCart" element={<AddToCart />}></Route>
 
 
                                         

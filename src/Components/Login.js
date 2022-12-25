@@ -7,6 +7,8 @@ const Login = () => {
    const navigate = useNavigate();
    const [Email, setEmail] = useState("");
    const [Pass, setPass] = useState("");
+   const[msg,setMsg] = useState("");
+    const[err,setErr] = useState("");
    document.title = "Login";
 
    const Submit = (event) => {
@@ -29,6 +31,13 @@ const Login = () => {
             else if (rsp.data.UserType === "Fisherman") {
                navigate('/FishermanDashboard');
             }
+         },(err)=>{
+            if(err.response.status==422) //for data validation
+            {
+                setErr(err.response.data);
+            }else{
+                setMsg("Wrong Username Or Password!!! Please Try Again");
+            }
          });
 
    }
@@ -38,6 +47,7 @@ const Login = () => {
             <div class="titlef">
                Login Form
             </div>
+            <h4>{msg}</h4>  
             <form onSubmit={Submit} class="Form">
                <div class="fieldf">
                   <input type="text" placeholder="Enter Your Email" name="Email" onChange={(e) => setEmail(e.target.value)} value={Email} />

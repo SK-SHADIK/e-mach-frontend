@@ -12,13 +12,13 @@ const LeftBar=()=>{
                         <li><a href={"/AdminDashboard"}><span>Dashboard</span></a></li>
                         <li><a href={"/Admin/Statements"}><span>Statement</span></a></li>
                         <li><a href={"/Admin/Orders"}><span>Orders</span></a></li> 
-                        <li><a href="#"><span>Leave Status</span></a></li> 
+                        <li><a href={"/Admin/LeaveStatus"}><span>Leave Status</span></a></li> 
                         <li><a href={"/Admin/Officer"}><span>Officer</span></a></li>
                         <li><a href={"/Admin/Fisherman"}><span>Fisherman</span></a></li>
                         <li><a href={"/Admin/QuestionAnswer"}><span>Question And Answers</span></a></li>
                         <li><a href={"/Admin/Suggestions"}><span>Suggestions</span></a></li>
                         <li><a href={"/Admin/Product"}><span>Products</span></a></li>
-                        <li><a href="#"><span>Account</span></a></li>
+                        <li><a href={"/Admin/UpdateProfile"}><span>Update Profile Info</span></a></li>
                         <li><a href={"/Login"}><span>Logout</span></a></li>
                     </ul>
                 </div>

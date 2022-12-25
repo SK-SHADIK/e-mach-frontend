@@ -52,8 +52,7 @@ section#main-contentf {
     margin: 10px;
 }
 
-.containerf .contentf .contentf-3 form input,
-.containerf .contentf .contentf-3 form select {
+.containerf .contentf .contentf-3 form input {
     margin-left: 10px;
     height: 30px;
     font-size: 20px;

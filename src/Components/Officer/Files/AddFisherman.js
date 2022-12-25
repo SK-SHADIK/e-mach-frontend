@@ -1,10 +1,10 @@
-import Bars from "../../Bars/Bars";
-import "../../CSS/AdminStyle3.css";
+import Bars from "../Bars/Bars";
+import "../CSS/OfficerStyle3.css";
 import {useState} from 'react';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const CreateFisherman=()=>{
+const AddFisherman=()=>{
     const[Name,setName] = useState("");
     const[Email,setEmail] = useState("");
     const[Add,setAdd] = useState("");
@@ -19,7 +19,7 @@ const CreateFisherman=()=>{
         setPass('');
         var data = {Name:Name, Email:Email, Add:Add, Pass:Pass};
         axios.post("https://localhost:44355/api/fisherman/add", data).then((rsp)=>{
-            navigate('/Admin/Fisherman');
+            navigate('/Officer/AddFisherman');
         });
     }
     return(
@@ -33,7 +33,7 @@ const CreateFisherman=()=>{
                                  
                             <form action="" method="POST" onSubmit={handleForm}>
                               
-                              <label>FISHERMAN NAME</label><br/>
+                              <label>Fisherman NAME</label><br/>
                               <input type="text" name="Name" id="Name" value={Name} onChange={(e)=>{setName(e.target.value)}} /><br/>
                               
                               <label>Email</label><br/>
@@ -61,4 +61,4 @@ const CreateFisherman=()=>{
         </div>
     )
 }
-export default CreateFisherman;
+export default AddFisherman;

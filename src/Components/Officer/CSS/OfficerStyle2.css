@@ -245,7 +245,6 @@ span.rev-span {
 span.progress-span {
     width: 10px;
     height: 10px;
-    background-color: #523a71;
     display: inline-block;
     border-radius: 10px;
     margin-right: 8px;
@@ -304,7 +303,7 @@ button:hover {
     border-radius: 5px;
 }
 .btn {
-    width: 60px;
+    width: 90px;
     height: 30px;
     background: #fd5a5e;
     border: none;
@@ -320,90 +319,3 @@ button:hover {
     color: #000;
     font-size: 20px;
 }
-.see-all .btn2 {
-    width: 200px;
-    height: 30px;
-    margin-right: 20px;
-}
-/* CONTRACT */
-.contract-sec {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contract-info {
-    color: #000;
-    max-width: 500px;
-    line-height: 65px;
-    padding-left: 50px;
-    font-size: 18px;
-}
-.contract-info i {
-    margin-right: 20px;
-    font-size: 25px;
-}
-.contract-form {
-    max-width: 700px;
-    margin-right: 50px;
-}
-.contract-info, .contract-form {
-    flex: 1;
-}
-.contract-form h2 {
-    color: #000;
-    text-align: center;
-    font-size: 35px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-}
-.contract-form .text-box {
-    background: rgba(46, 45, 45, 0.518);
-    color: #000;
-    border: none;
-    width: calc(50% - 10px);
-    height: 50px;
-    padding: 12px;
-    font-size: 15px;
-    border-radius: 5px;
-    box-shadow: 0 1px 1px rgba (0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    opacity: 0.9;
-}
-.contract-form .text-box:first-child {
-    margin-right: 15px;
-}
-.contract-form textarea {
-    background: rgba(46, 45, 45, 0.518);
-    color: #000;
-    border: none;
-    width: 100%;
-    padding: 12px;
-    font-size: 15px;
-    min-height: 200px;
-    max-height: 400px;
-    resize: vertical;
-    border-radius: 5px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    opacity: 0.9;
-}
-.contract-form .send-btn {
-    float: right;
-    background: #2E94E3;
-    color: #fff;
-    border: none;
-    width: 120px;
-    height: 40px;
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.contract-form .send-btn:hover {
-    background: salmon;
-    color: #000;
-} 

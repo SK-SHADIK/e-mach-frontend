@@ -1,10 +1,10 @@
 import Bars from "../../Bars/Bars";
-import "../../CSS/AdminStyle3.css";
+import "../../CSS/OfficerStyle3.css";
 import {useState} from 'react';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const CreateFisherman=()=>{
+const CreateFishermanO=()=>{
     const[Name,setName] = useState("");
     const[Email,setEmail] = useState("");
     const[Add,setAdd] = useState("");
@@ -33,7 +33,7 @@ const CreateFisherman=()=>{
                                  
                             <form action="" method="POST" onSubmit={handleForm}>
                               
-                              <label>FISHERMAN NAME</label><br/>
+                              <label>OFFICER NAME</label><br/>
                               <input type="text" name="Name" id="Name" value={Name} onChange={(e)=>{setName(e.target.value)}} /><br/>
                               
                               <label>Email</label><br/>
@@ -61,4 +61,4 @@ const CreateFisherman=()=>{
         </div>
     )
 }
-export default CreateFisherman;
+export default CreateFishermanO;

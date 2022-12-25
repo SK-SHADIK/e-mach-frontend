@@ -10,6 +10,7 @@ import Officer from './Admin/Files/Officer';
 import Orders from './Admin/Files/Orders';
 import Product from './Admin/Files/Products';
 import QuestionAnswer from './Admin/Files/QuestionAnswer';
+import Statements from './Admin/Files/Statements';
 import Suggestions from './Admin/Files/Suggestions';
 import UpdateFisherman from './Admin/Files/Update/UpdateFisherman';
 import UpdateOfficer from './Admin/Files/Update/UpdateOfficer';
@@ -59,6 +60,7 @@ const RouteLink = () => {
                     <Route path="/Admin/CreateSuggestion" element={<CreateSuggestion />}></Route>
                     <Route path="/Admin/UpdateSuggestion/:Id" element={<UpdateSuggestion />}></Route>
                     <Route path="/Admin/Orders" element={<Orders />}></Route>
+                    <Route path="/Admin/Statements" element={<Statements />}></Route>
 
 
 

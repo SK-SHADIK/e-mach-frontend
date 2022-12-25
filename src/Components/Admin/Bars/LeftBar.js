@@ -10,7 +10,7 @@ const LeftBar=()=>{
                 <div class="sidebar-menu">
                     <ul>
                         <li><a href={"/AdminDashboard"}><span>Dashboard</span></a></li>
-                        <li><a href="#"><span>Statement</span></a></li>
+                        <li><a href={"/Admin/Statements"}><span>Statement</span></a></li>
                         <li><a href={"/Admin/Orders"}><span>Orders</span></a></li> 
                         <li><a href="#"><span>Leave Status</span></a></li> 
                         <li><a href={"/Admin/Officer"}><span>Officer</span></a></li>
